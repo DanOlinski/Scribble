@@ -13,6 +13,8 @@
  * @since 1.0.0
  */
 
+ echo "this is my update"; 
+ 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
