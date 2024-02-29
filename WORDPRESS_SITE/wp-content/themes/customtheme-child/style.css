@@ -1,0 +1,18 @@
+/*
+Theme Name: Custom Theme Child
+Theme URI: not available in wordpress themes
+Author: Dan
+Author URI: NA
+Template: customtheme
+Text Domain: customtheme-child
+*/
+
+body {
+
+    color: rgb(255, 255, 27);
+
+    }
+
+.test {
+    color: red;
+}
