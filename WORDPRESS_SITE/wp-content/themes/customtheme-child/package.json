@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "compile": "wp-scripts start"
   },
   "author": "",
   "license": "ISC",

@@ -51,8 +51,6 @@ if ( ! function_exists( 'custom_theme_styles' ) ) :
 
 function custom_theme_styles() {
     wp_enqueue_style('custom_theme', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
-	/*this is referencing the CSS file inside the build folder. The index.css file is generated automatically whenever the file base.scss is updated, however for the compiler to work you need to have it running in a terminal by running; `npm run start` from within the customtheme folder  */
-    wp_enqueue_style('custom_theme_blocks', get_template_directory_uri() . '/build/index.css');
     
 }
 endif;

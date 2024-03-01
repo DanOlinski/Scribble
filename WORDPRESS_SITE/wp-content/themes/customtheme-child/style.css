@@ -9,10 +9,6 @@ Text Domain: customtheme-child
 
 body {
 
-    color: rgb(255, 255, 27);
+    background-color: blueviolet !important;
 
     }
-
-.test {
-    color: red;
-}
