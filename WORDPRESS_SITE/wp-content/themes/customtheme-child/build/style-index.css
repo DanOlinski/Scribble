@@ -1,0 +1,138 @@
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./styles/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+body {
+  background-image: url(images/bg.584ad7a0.jpg);
+  background-color: rgb(37, 36, 36);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: rgb(243, 234, 220);
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.header {
+  height: 87px;
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  font-size: 18px;
+  background-color: rgba(28, 8, 8, 0.368627451);
+  width: 100%;
+}
+
+.header-text {
+  text-decoration: none;
+}
+
+.acf_footer_home {
+  position: absolute;
+  bottom: 21px;
+  right: 45px;
+  font-size: 15px;
+}
+
+.acf_footer_about {
+  font-size: 15px;
+  text-align: end;
+  margin: 30px;
+  border: 100px;
+}
+
+.about_text {
+  max-height: 316px;
+  overflow: overlay;
+  margin-top: 86px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+  font-size: medium;
+  border-radius: 15px;
+}
+
+.canvas {
+  margin-top: 55px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>✍🏻</text></svg>") 0 22, auto;
+}
+
+.scribble-options {
+  width: 188px;
+  height: 86px;
+  float: right;
+  margin-top: -27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-button {
+  position: relative;
+  z-index: 2;
+  margin-top: -14px;
+  width: 110px;
+  margin-left: 35px;
+  font-size: medium;
+  background-color: rgba(231, 192, 140, 0.4);
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.6509803922);
+  border-style: dashed;
+  cursor: context-menu;
+}
+
+.button-text {
+  font-size: medium;
+}
+
+.pallet {
+  display: flex;
+  /* background-color: rgb(39, 238, 172); */
+  padding: 9px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pallet-color-default {
+  position: relative;
+  z-index: 2;
+  width: 46px;
+  height: 25px;
+  margin: 4px;
+}
+
+.green-pallet {
+  background: rgba(0, 128, 0, 0.7);
+}
+
+.blue-pallet {
+  background: rgba(0, 0, 255, 0.7);
+}
+
+.red-pallet {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.yellow-pallet {
+  background: rgba(255, 255, 0, 0.7);
+}
+
+.orange-pallet {
+  background: rgba(255, 166, 0, 0.7);
+}
+
+.white-pallet {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/*# sourceMappingURL=style-index.css.map*/
