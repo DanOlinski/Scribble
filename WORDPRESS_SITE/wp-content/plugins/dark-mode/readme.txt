@@ -2,8 +2,8 @@
 Contributors: wppool, azizultex, princeahmed, shahreyar46, foysalremon
 Tags: markdown, editor, dashboard, dark, markdown editor
 Requires at least: 5.0.0
-Tested up to: 6.2
-Stable tag: 4.1.5
+Tested up to: 6.4
+Stable tag: 4.1.6
 Requires PHP: 5.6
 License: GNU GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -85,6 +85,10 @@ WP Markdown is a developer's way of writing content. Developers or coding folks 
 9. Admin Dashboard in Dark Mode.
 
 == Changelog ==
+
+= 4.1.6 =
+* Improvement: Updated Appsero client
+* Improvement: Updated WPPOOL sdk 
 
 = 4.1.5 =
 * Fix: Fixed FluentCRM not collect leads 

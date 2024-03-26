@@ -908,17 +908,30 @@ if ( ! class_exists( 'WPPOOL_Settings_API' ) ) {
 		 * @version 1.0.0
 		 */
 		public function show_navigation() {
-			$html  = '<div class="wppool-settings-sidebar"><ul>';
 			$count = count( $this->settings_sections );
-			// don't show the navigation if only one section exists
+
+			// Don't show the navigation if only one section exists.
 			if ( $count === 1 ) {
 				return;
 			}
-			foreach ( $this->settings_sections as $tab ) {
-				$html .= sprintf( '<li><a href="#%1$s" id="%1$s-tab">%2$s</a></li>', $tab['id'], $tab['title'] );
-			}
-			$html .= '</ul></div>';
-			echo $html;
+
+			$nav_items = array_map(
+				function ( $tab ) {
+					return sprintf(
+						'<li><a href="#%1$s" id="%1$s-tab">%2$s</a></li>',
+						esc_attr( $tab['id'] ),
+						esc_html( $tab['title'] )
+					);
+				},
+				$this->settings_sections
+			);
+
+			$escaped_nav_items = implode( '', $nav_items );
+
+			printf(
+				'<div class="wppool-settings-sidebar"><ul>%s</ul></div>',
+				esc_html( $escaped_nav_items )
+			);
 		}
 
 		/**

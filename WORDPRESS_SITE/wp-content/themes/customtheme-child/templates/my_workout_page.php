@@ -6,62 +6,25 @@
  get_header(); ?>
 
 <div>
-    <form 
-    role="form" method="post"
-    >
-        <div>
-            <label 
-            for="workoutdate"
-            >
-            Workout Date
-            </label>
-                <input 
-                id="workoutdate" 
-                name="workoutdate" 
-                type="date" 
-                required=""
-                >
-        </div>
-        <div>
-            <label 
-            for= "activity"
-            >
-            Activity
-            </label>
-            <input 
-            id="activity" 
-            name="activity" 
-            type="text" 
-            placeholder="activity" 
-            required=""
-            >
-        </div>
-        <div class="form-group">
-            <input 
-            id="user_id" 
-            name="user_id" 
-            type="hidden" 
-            value="
-                <?php echo get_current_user_id(); ?>" >
-        </div>
-        <div>
-            <div>
-                <input 
-                type="submit" 
-                value="Submit" 
-                name="workoutformbtn"
-                >
-            </div>
-        </div>
-    </form>
-    <div>
-        <label>Workout History</label>
-    </div>
-    <div>
-        <?php
-            include './database-files/read_workout.php';
-        ?>
-    </div>
-    
-</div>
+    <form method="POST" role="form">
+        <table >
+            <td>
+                <input type="date" name="workoutdate" required="">
+            </td>
 
+            <td>
+                <input type="text" name="activity" required="">
+            </td>
+
+            <td>
+                <input id="user_id" name="user_id" type="hidden" value="
+                    <?php echo get_current_user_id(); ?>" >
+                <input type="submit" name="workoutformbtn" value="Submit">
+            </td>
+        </table>
+    </form>
+  
+    <?php
+        include './database-files/read_workout.php';
+    ?>
+</div>

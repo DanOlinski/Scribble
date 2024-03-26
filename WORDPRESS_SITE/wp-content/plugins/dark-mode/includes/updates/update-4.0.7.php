@@ -8,7 +8,6 @@ class WP_Markdown_Editor_Update_4_0_7 {
 
 	public function __construct() {
 		$this->update_settings();
-
 	}
 
 	private function update_settings() {
@@ -26,7 +25,6 @@ class WP_Markdown_Editor_Update_4_0_7 {
 		$settings['new_fonts']          = 'off';
 
 		update_option( 'wpmde_general', $settings );
-
 	}
 
 	public static function instance() {
@@ -36,7 +34,6 @@ class WP_Markdown_Editor_Update_4_0_7 {
 
 		return self::$instance;
 	}
-
 }
 
 

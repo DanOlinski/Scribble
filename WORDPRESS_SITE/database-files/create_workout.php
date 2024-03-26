@@ -3,7 +3,8 @@ include './mydbfile.php';
 
 $workoutdate = $_POST["workoutdate"];
 $activity = $_POST["activity"];
-$user_id = $_POST["user_id"];
+// $user_id = $_POST["user_id"];
+$user_id = get_current_user_id();
 
 //next four lines are for debugging, they appear in the top of all pages however you need to add the following code into the functions.php file of the theme you are currently using;  include './database-files/create_workout.php';
 //comment them out before publishing the site
@@ -19,5 +20,7 @@ $sql="insert into my_workout (user_id,workout_date,activity) values('$user_id', 
 
 $conn->query($sql);
 // var_dump($sql);
+// var_dump($conn);
+var_dump($user_id);
 $conn->close();
 ?>

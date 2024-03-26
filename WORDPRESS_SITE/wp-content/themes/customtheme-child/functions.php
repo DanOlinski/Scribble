@@ -49,7 +49,23 @@
         //these next lines are for debugging, they appear in the top of all pages. for debugging code that contains "include" you'll have to echo something out or use var_dump('...') inside the file you are including
         // include './database-files/read_workout.php';
     }
+
+    function notes_db_crud() {
+
+      
+        //delete
+        if( isset($_POST['delete_note']) ){
+            include './wp-content/themes/customtheme-child/sticky-notes-crud/delete.php';
+        }
+        
+        // update
+        if( isset($_POST['update_note']) ){
+              include './wp-content/themes/customtheme-child/sticky-notes-crud/update.php';
+        }
+    }
     
     add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
 
     add_action('template_redirect', 'grab_form_data', 10);
+
+    add_action('template_redirect', 'notes_db_crud', 10);

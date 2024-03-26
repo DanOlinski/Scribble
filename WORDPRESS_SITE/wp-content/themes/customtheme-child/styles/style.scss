@@ -2,28 +2,47 @@ body {
     background-image: url("../assets/bg.jpg");
     background-color: rgb(37, 36, 36);
     background-repeat: no-repeat;
-    background-size:auto;
-
-    color: rgb(243, 234, 220);
+    background-size: auto;
+    font-family: sans-serif;
+    color: #ffedd9;
 }
 
 .logo {
-    margin-top: 20px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.header-links {
+    // font-family: sans-serif;
+    color: #ffedd9;
+    text-decoration: unset;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header {
+    display: flex;
     height: 87px;
     position: absolute;
-    top: 21px;
+    top: 0px;
     left: 0px;
     font-size: 18px;
-    background-color: #1c08085e;
+    background-color: rgba(28, 8, 8, 0.368627451);
     width: 100%;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-content: end;
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
 }
 
 .header-text {
     text-decoration: none;
-    
+
 }
 
 .acf_footer_home {
@@ -41,9 +60,9 @@ body {
 }
 
 .about_text {
-    max-height: 316px;
+    max-height: 283px;
     overflow: overlay;
-    margin-top: 86px;
+    margin-top: 130px;
     margin-right: 200px;
     margin-left: 200px;
     margin-bottom: 100px;
@@ -63,12 +82,12 @@ body {
 
 }
 
-.scribble-options{
+.scribble-options {
     // background-color: rgb(39, 238, 172);
     width: 188px;
     height: 86px;
     float: right;
-    margin-top: -27px;
+    margin-top: -7px;
     display: flex;
     flex-direction: column;
 }
@@ -76,7 +95,7 @@ body {
 .clear-button {
     position: relative;
     z-index: 2;
-    margin-top: -14px;
+    margin-top: 0px;
     width: 110px;
     margin-left: 35px;
     font-size: medium;
@@ -101,8 +120,8 @@ body {
     padding: 9px;
     width: 100%;
     height: 100%;
-    
-    
+
+
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -115,9 +134,10 @@ body {
     height: 25px;
     margin: 4px;
 }
+
 .green-pallet {
     background: rgba(0, 128, 0, 0.70);
-    
+
 }
 
 .blue-pallet {
@@ -140,3 +160,110 @@ body {
     background: rgba(255, 255, 255, 0.70);
 }
 
+.s-notes {
+        /* float: right; */
+    /* position: relative; */
+    /* align-self: end; */
+    top: 54px;
+    /* left: 513px; */
+    /* right: -746px; */
+    font-family: "Kalam", cursive;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    transform: rotate(-3deg);
+    /* margin-top: 8px; */
+    margin-left: 15px;
+    margin-bottom: -102px;
+
+    &-db {
+        position: relative;
+        top: 150px;
+        left: 127.2px;
+        font-family: "Kalam", cursive;
+        font-size: 17px;
+        text-decoration: none;
+        color: #000;
+        transform: rotate(-3deg);
+        /* border-width: 10px; */
+        margin-top: -81px;
+        margin-left: -113px;
+        max-width: 100px;
+    }
+
+    &-input {
+
+
+        // background: #ffc;
+        // background: rgba(255, 255, 204, 0.201);
+        background: #ffc;
+        /* display: block; */
+        height: 87px;
+        width: 104px;
+        padding: 8px;
+        padding-top: 1px;
+        box-shadow: 8px 6px 9px rgb(0 0 0 / 51%);
+
+        border-color: #ffffff00;
+        border-left-width: 24px;
+        border-top-width: 5px;
+        outline-color: transparent;
+        resize: none;
+    }
+
+    &-submit-new {
+            position: relative;
+    top: 150px;
+    left: 127.2px;
+    font-family: "Kalam", cursive;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    transform: rotate(-3deg);
+    /* border-width: 10px; */
+    margin-top: -81px;
+    margin-left: -113px;
+    max-width: 100px;
+    }
+
+    &-submit {
+        background-color: rgba(90, 255, 74, 0.61);
+    color: black;
+    border-radius: 17px;
+    /* margin-top: 131px; */
+    position: relative;
+    top: 27px;
+    left: 3px;
+    width: 24px;
+    }
+
+    &-delete {
+        background-color: rgba(255, 74, 74, 0.61);
+        color: black;
+        border-radius: 17px;
+        /* margin-top: 131px; */
+        position: relative;
+        top: -77px;
+        left: 3px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-db-container {
+            /* margin-top: 74px; */
+    float: left;
+    top: 20px;
+    display: flex;
+    width: 168px;
+    /* background-color: rgba(255, 74, 74, 0.61); */
+    flex-direction: column-reverse;
+    margin-top: 74px;
+
+        
+    }
+}
+
+.test {
+    margin-top: 200px;
+    margin-left: 160px;
+}

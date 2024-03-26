@@ -49,7 +49,6 @@ foreach($result_arr as $x){
         
         <table border="0">
         
-
         <td>
         <input type="date" name="update_workout_date" value="' .$x[2] .'">
         </td>

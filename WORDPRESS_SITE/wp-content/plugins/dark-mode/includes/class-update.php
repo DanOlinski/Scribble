@@ -65,5 +65,4 @@ class WP_Markdown_Editor_Update {
 		delete_option( 'dark_mode_version' );
 		update_option( 'dark_mode_version', DARK_MODE_VERSION );
 	}
-
 }
