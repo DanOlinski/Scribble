@@ -36,7 +36,7 @@ findxy('out', e)
 function color(obj) {
 switch (obj.id) {
 case "green":
-    x = "rgba(0, 128, 0, 0.70)";
+    x = "rgba(64, 230, 64, 0.785)";
     break;
 case "blue":
     x = "rgba(0, 0, 255, 0.70)";
@@ -47,8 +47,8 @@ case "red":
 case "yellow":
     x = "rgba(255, 255, 0, 0.70)";
     break;
-case "orange":
-    x = "rgba(255, 166, 0, 0.70)";
+case "purple":
+    x = "#f170e7c4";
     break;
 case "white":
     x = "rgba(255, 255, 255, 0.70)";

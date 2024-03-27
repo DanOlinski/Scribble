@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     font-family: sans-serif;
-    color: #ffedd9;
+    color: #f5e7d8;
 }
 
 .logo {
@@ -14,7 +14,7 @@ body {
 
 .header-links {
     // font-family: sans-serif;
-    color: #ffedd9;
+    color: #f5e7d8;
     text-decoration: unset;
     margin-left: 10px;
     margin-right: 10px;
@@ -99,7 +99,7 @@ body {
     width: 110px;
     margin-left: 35px;
     font-size: medium;
-    background-color: #e7c08c66;
+    background-color: #5d4b3366;
     padding: 3px;
     display: flex;
     justify-content: center;
@@ -136,7 +136,7 @@ body {
 }
 
 .green-pallet {
-    background: rgba(0, 128, 0, 0.70);
+    background: rgba(64, 230, 64, 0.785);
 
 }
 
@@ -152,8 +152,8 @@ body {
     background: rgba(255, 255, 0, 0.70);
 }
 
-.orange-pallet {
-    background: rgba(255, 166, 0, 0.70);
+.purple-pallet {
+    background: #f170e7c4;
 }
 
 .white-pallet {
@@ -201,7 +201,7 @@ body {
         height: 87px;
         width: 104px;
         padding: 8px;
-        padding-top: 1px;
+        padding-top: 7px;
         box-shadow: 8px 6px 9px rgb(0 0 0 / 51%);
 
         border-color: #ffffff00;
@@ -232,18 +232,18 @@ body {
     border-radius: 17px;
     /* margin-top: 131px; */
     position: relative;
-    top: 27px;
+    top: 29px;
     left: 3px;
     width: 24px;
     }
 
     &-delete {
-        background-color: rgba(255, 74, 74, 0.61);
+        background-color: rgba(255, 48, 48, 0.658);
         color: black;
         border-radius: 17px;
         /* margin-top: 131px; */
         position: relative;
-        top: -77px;
+        top: -82px;
         left: 3px;
         width: 24px;
         height: 24px;
@@ -263,7 +263,13 @@ body {
     }
 }
 
-.test {
-    margin-top: 200px;
-    margin-left: 160px;
+.afc_images {
+    width: 145px;
+    transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    margin-left: 15px;
+    /* margin-bottom: -40px; */
+    position: relative;
+    top: 94px;
+    left: -4px;
 }

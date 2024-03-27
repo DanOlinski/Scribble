@@ -2,30 +2,13 @@
 /**
  *Template Name: home page
  */
+
+ get_header();
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="./wp-content/themes/customtheme-child/build/style-index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scribble</title>
-
     <script src="./javascript/scribbleFunctionality.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-</head>
-
 <body onload="init()">
-    <header>
-        <?php
-            include './wp-content/themes/customtheme-child/parts/header.php';
-            include './wp-content/themes/customtheme-child/parts/footer.php';
-        ?>
-    </header>
-   
 
 <canvas id="can" width="5000" height="5000" class="canvas">
 </canvas>
@@ -48,7 +31,7 @@
     onclick="color(this)">
 </div>
 
-<div class="orange-pallet pallet-color-default" id="orange"
+<div class="purple-pallet pallet-color-default" id="purple"
     onclick="color(this)">
 </div>
 
@@ -64,7 +47,8 @@
 
 
 include './wp-content/themes/customtheme-child/parts/s-notes.php';
+
+get_footer();
 ?>
 
 </body>
-</html>

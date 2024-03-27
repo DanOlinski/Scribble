@@ -69,3 +69,4 @@
     add_action('template_redirect', 'grab_form_data', 10);
 
     add_action('template_redirect', 'notes_db_crud', 10);
+

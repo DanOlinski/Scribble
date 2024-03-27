@@ -3,28 +3,22 @@
 /**
  * Template Name: About
  */
+
+ get_header();
 ?>
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./wp-content/themes/customtheme-child/build/style-index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Scribble - About</title>
-
-    <script src="./javascript/scribbleFunctionality.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
 </head>
 
-<body>
-    <header>
-        <?php
-            include './wp-content/themes/customtheme-child/parts/header.php';
-            include './wp-content/themes/customtheme-child/parts/footer.php';
-        ?>
-    </header>
+<body> -->
+    
    
 <div class="about_text">
 # This app is meant to creates a docker container with a wordpress app and a mysql database server, you should have Docker installed in your PC before running this app
@@ -44,7 +38,9 @@
     - run the command; npm run compile (this will open a process that will automatically compile any changes you make in the style.scss file)
 </div>
 
+<?php
+    get_footer();
+?>
 
-
-</body>
-</html>
+<!-- </body>
+</html> -->
