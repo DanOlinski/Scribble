@@ -72,20 +72,15 @@ body {
   margin-left: 200px;
   margin-bottom: 100px;
   font-size: medium;
-  border-radius: 15px;
 }
 
 .about_div {
   position: absolute;
   z-index: 1;
   background-image: url(images/bg.584ad7a0.jpg);
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(255, 255, 255, 0.67); */
-  background-repeat: no-repeat;
-  background-size: auto;
-  /* font-family: sans-serif; */
-  /* color: #f5e7d8;*/
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-color: rgb(59, 58, 58);
 }
 
 .canvas {
@@ -148,7 +143,6 @@ body {
 
 .pallet {
   display: flex;
-  /* background-color: rgb(39, 238, 172); */
   padding: 9px;
   width: 100%;
   height: 100%;
@@ -190,18 +184,12 @@ body {
 }
 
 .s-notes {
-  /* float: right; */
-  /* position: relative; */
-  /* align-self: end; */
   top: 54px;
-  /* left: 513px; */
-  /* right: -746px; */
   font-family: "Kalam", cursive;
   font-size: 17px;
   text-decoration: none;
   color: #000;
   transform: rotate(-3deg);
-  /* margin-top: 8px; */
   margin-left: 15px;
   margin-bottom: -102px;
 }
@@ -214,14 +202,12 @@ body {
   text-decoration: none;
   color: #000;
   transform: rotate(-3deg);
-  /* border-width: 10px; */
   margin-top: -81px;
   margin-left: -113px;
   max-width: 100px;
 }
 .s-notes-input {
   background: #ffc;
-  /* display: block; */
   height: 87px;
   width: 104px;
   padding: 8px;
@@ -242,7 +228,6 @@ body {
   text-decoration: none;
   color: #000;
   transform: rotate(-3deg);
-  /* border-width: 10px; */
   margin-top: -81px;
   margin-left: -113px;
   max-width: 100px;
@@ -251,7 +236,6 @@ body {
   background-color: rgba(90, 255, 74, 0.61);
   color: black;
   border-radius: 17px;
-  /* margin-top: 131px; */
   position: relative;
   top: 29px;
   left: 3px;
@@ -261,7 +245,6 @@ body {
   background-color: rgba(255, 48, 48, 0.658);
   color: black;
   border-radius: 17px;
-  /* margin-top: 131px; */
   position: relative;
   top: -82px;
   left: 3px;
@@ -269,12 +252,10 @@ body {
   height: 24px;
 }
 .s-notes-db-container {
-  /* margin-top: 74px; */
   float: left;
   top: 20px;
   display: flex;
   width: 168px;
-  /* background-color: rgba(255, 74, 74, 0.61); */
   flex-direction: column-reverse;
   margin-top: 74px;
 }
@@ -284,7 +265,6 @@ body {
   transform: rotate(-3deg);
   transform: rotate(-3deg);
   margin-left: 15px;
-  /* margin-bottom: -40px; */
   position: relative;
   top: 94px;
   left: -4px;
