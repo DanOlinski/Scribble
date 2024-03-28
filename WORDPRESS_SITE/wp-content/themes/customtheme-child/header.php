@@ -11,6 +11,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./javascript/scribbleFunctionality.js" ></script>
         <script src="./javascript/navbar.js" ></script>
+        <script type ="application/ld+json">
+            //in order to test if the schema is working visit: https://developers.google.com/search/docs/advanced/structured-data
+            //update this information after launching website
+            {
+                "@content":"http://localhost:8000/about"
+                "@type":"personal"
+                "@id":"http://localhost:8000/"
+                "Name":"Scribble"
+                "url":"http://localhost:8000/"
+            }
+        </script>
     </head>
 
     <body onload="init()">
