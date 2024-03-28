@@ -1,10 +1,10 @@
 ## About
-    -This is a presentation wordpress CRUD app
-    - on the interface you can add notes (these notes are saved to a database, they can be updated and deleted from the user interface)
-    - There is a fun scribble feature where the user can sketch drawings on the browser
-    - There are ACFs where an editor with access to the wp-admin can add images that show up below the notes and the editor can also update date of the last update to the site. This info is displayed on the footer
-    - This app also includes SEO/schema
-    - This app can also be used to start a WordPress project from scratch that runs on docker. In order to do that, delete all of the files and folders from this project except for the `docker-compose.yml` file. You can use the custom theme and other features as a starting point for creating your own WordPress app.
+- This is a presentation wordpress CRUD app
+- on the interface you can add notes (these notes are saved to a database, they can be updated and deleted from the user interface)
+- There is a fun scribble feature where the user can sketch drawings on the browser
+- There are ACFs where an editor with access to the wp-admin can add images that show up below the notes and the editor can also update date of the last update to the site. This info is displayed on the footer
+- This app also includes SEO/schema
+- This app can also be used to start a WordPress project from scratch that runs on docker. In order to do that, delete all of the files and folders from this project except for the `docker-compose.yml` file. You can use the custom theme and other features as a starting point for creating your own WordPress app.
 
 !["Screenshot of URLs page"](./WORDPRESS_SITE/wp-content/themes/customtheme-child/assets/Snapshot1.PNG)
 
