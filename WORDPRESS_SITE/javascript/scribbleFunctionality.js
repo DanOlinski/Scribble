@@ -44,7 +44,7 @@ function color(obj) {
             x = "rgba(255, 0, 0, 0.70)";
             break;
         case "yellow":
-            x = "rgba(255, 255, 0, 0.70)";
+            x = "rgba(248, 255, 41, 0.845)";
             break;
         case "purple":
             x = "#f170e7c4";
