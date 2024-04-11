@@ -17,6 +17,9 @@
 - Ajax
 - jQuery
 - VanilaJavascript
+- Docker
+- MySQL
+- PhpMyAdmin
 
 ## Starting up the app
 #### Type into the console; `docker-compose up -d` (this will create the images (wp and mysql) and start it up in a docker container). visit `http://localhost:8000/` to setup your wordpress website (username and password are both set as admin)
