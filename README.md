@@ -8,6 +8,16 @@
 
 !["Screenshot of URLs page"](./WORDPRESS_SITE/wp-content/themes/customtheme-child/assets/Snapshot1.PNG)
 
+## Stack
+- php
+- WordPress
+- WebPack
+- SASS
+- HTML
+- Ajax
+- jQuery
+- VanilaJavascript
+
 ## Starting up the app
 #### Type into the console; `docker-compose up -d` (this will create the images (wp and mysql) and start it up in a docker container). visit `http://localhost:8000/` to setup your wordpress website (username and password are both set as admin)
 #### To edit your wp page go to `http://localhost:8000/wp-admin/`
