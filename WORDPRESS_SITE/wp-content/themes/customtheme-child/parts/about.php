@@ -9,7 +9,7 @@
         <br>
         - There is a fun scribble feature where the user can sketch drawings on the browser
         <br>
-        - There are ACFs where an editor with access to the wp-admin can add images that show up below the notes and the editor can also update date of the last update to the site. This info is displayed on the footer
+        - There are ACFs where an editor with access to the wp-admin can add images that show up below the notes.
         <br>
         - This app also includes SEO/schema
         <br>
