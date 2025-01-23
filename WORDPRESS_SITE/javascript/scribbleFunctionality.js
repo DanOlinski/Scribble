@@ -6,6 +6,7 @@ var canvas, ctx, flag = false,
     currY = 0,
     dot_flag = false;
 
+
 //default chalk color
 var x = "rgba(255, 255, 255, 0.70)",
     y = 8;

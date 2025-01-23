@@ -84,6 +84,7 @@ body {
     overflow: hidden;
     position: fixed;
     left: 0;
+    touch-action: none;
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>✍🏻</text></svg>") 0 22, auto;
 }
 
