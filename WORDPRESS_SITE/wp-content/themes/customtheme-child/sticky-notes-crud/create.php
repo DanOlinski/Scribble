@@ -1,6 +1,7 @@
 <?php
     //include database connection script
     include './mydbfile.php';
+    include './s-notes.php';
 
     // $note = $_POST["new_note"];
     $userid = get_current_user_id();
