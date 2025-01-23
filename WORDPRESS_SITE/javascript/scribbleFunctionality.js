@@ -12,6 +12,27 @@ var x = "rgba(255, 255, 255, 0.70)",
     y = 8;
 
 
+// function init() {
+//     canvas = document.getElementById('can');
+//     ctx = canvas.getContext("2d");
+//     //this is what set's the boundaries for the chalk to draw on, that's why you need HTML attributes of width and height otherwise these values can't know the boundaries for where you can draw on
+//     w = canvas.width;
+//     h = canvas.height;
+
+//     canvas.addEventListener("pointermove", function (e) {
+//         findxy('move', e)
+//     }, false);
+//     canvas.addEventListener("pointerdown", function (e) {
+//         findxy('down', e)
+//     }, false);
+//     canvas.addEventListener("pointerup", function (e) {
+//         findxy('up', e)
+//     }, false);
+//     canvas.addEventListener("pointerout", function (e) {
+//         findxy('out', e)
+//     }, false);
+// }
+
 function init() {
     canvas = document.getElementById('can');
     ctx = canvas.getContext("2d");
@@ -19,19 +40,20 @@ function init() {
     w = canvas.width;
     h = canvas.height;
 
-    canvas.addEventListener("pointermove", function (e) {
+    canvas.addEventListener("touchmove", function (e) {
         findxy('move', e)
     }, false);
-    canvas.addEventListener("pointerdown", function (e) {
+    canvas.addEventListener("touched", function (e) {
         findxy('down', e)
     }, false);
-    canvas.addEventListener("pointerup", function (e) {
+    canvas.addEventListener("touchcancel", function (e) {
         findxy('up', e)
     }, false);
-    canvas.addEventListener("pointerout", function (e) {
+    canvas.addEventListener("touchend", function (e) {
         findxy('out', e)
     }, false);
 }
+
 
 function color(obj) {
     switch (obj.id) {
