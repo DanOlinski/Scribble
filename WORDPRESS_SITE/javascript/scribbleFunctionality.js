@@ -40,16 +40,16 @@ function initTouch() {
     h = canvas.height;
 
     canvas.addEventListener("touchmove", function (e) {
-        findxy('move', e)
+        findxy('fmove', e)
     }, false);
     canvas.addEventListener("touched", function (e) {
-        findxy('down', e)
+        findxy('fdown', e)
     }, false);
     canvas.addEventListener("touchcancel", function (e) {
-        findxy('up', e)
+        findxy('fup', e)
     }, false);
     canvas.addEventListener("touchend", function (e) {
-        findxy('out', e)
+        findxy('fout', e)
     }, false);
 }
 
@@ -102,6 +102,7 @@ function findxy(res, e) {
 
         flag = true;
         dot_flag = true;
+        
         if (dot_flag) {
             ctx.beginPath();
             ctx.fillStyle = x;
@@ -110,10 +111,49 @@ function findxy(res, e) {
             dot_flag = false;
         }
     }
+    
     if (res == 'up' || res == "out") {
         flag = false;
     }
+    
     if (res == 'move') {
+        if (flag) {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+            draw();
+        }
+    }
+
+
+
+
+//-----------------------------
+
+    if (res == 'fdown') {
+        prevX = currX;
+        prevY = currY;
+        currX = e.clientX - canvas.offsetLeft;
+        currY = e.clientY - canvas.offsetTop;
+
+        flag = true;
+        dot_flag = true;
+        
+        if (dot_flag) {
+            ctx.beginPath();
+            ctx.fillStyle = x;
+            ctx.fillRect(currX, currY, 2, 2);
+            ctx.closePath();
+            dot_flag = false;
+        }
+    }
+    
+    if (res == 'fup' || res == "fout") {
+        flag = false;
+    }
+    
+    if (res == 'fmove') {
         if (flag) {
             prevX = currX;
             prevY = currY;
