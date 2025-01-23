@@ -1,13 +1,12 @@
 <?php
     //include database connection script
     include './mydbfile.php';
-    include './s-notes.php';
+    global $wpdb;
+    include './wp-load.php';
 
     // $note = $_POST["new_note"];
     $userid = get_current_user_id();
     
-    var_dump("insert into notes (user_id, note) values('$userid', '$note')");
-
     //check that there is a value typed into the form (select form by name)
     if( strlen($_POST['new_note']) > 0 ){
         
