@@ -42,3 +42,5 @@
         </form>
     </div>
 </div>
+
+<script src="./javascript/clearNewNoteDiv.js" ></script>
