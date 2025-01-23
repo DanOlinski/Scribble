@@ -12,10 +12,11 @@ var x = "rgba(255, 255, 255, 0.70)",
     y = 8;
 
 
+
     const canvas = document.getElementById('drawingCanvas');
     const ctx = canvas.getContext('2d');
 
-    // Resize canvas to fit the screen
+    // Resize the canvas to fit the screen
     function resizeCanvas() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -23,40 +24,52 @@ var x = "rgba(255, 255, 255, 0.70)",
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
-    let drawing = false;
+    let isDrawing = false;
     let lastX = 0;
     let lastY = 0;
 
-    // Start drawing
-    function startDrawing(event) {
-      drawing = true;
+    // Utility function to get touch coordinates relative to the canvas
+    function getTouchPos(event) {
+      const rect = canvas.getBoundingClientRect();
       const touch = event.touches[0];
-      lastX = touch.clientX;
-      lastY = touch.clientY;
+      return {
+        x: touch.clientX - rect.left,
+        y: touch.clientY - rect.top,
+      };
     }
 
-    // Draw on canvas
+    // Start drawing
+    function startDrawing(event) {
+      isDrawing = true;
+      const pos = getTouchPos(event);
+      lastX = pos.x;
+      lastY = pos.y;
+    }
+
+    // Draw on the canvas
     function draw(event) {
-      if (!drawing) return;
+      if (!isDrawing) return;
 
-      const touch = event.touches[0];
-      const currentX = touch.clientX;
-      const currentY = touch.clientY;
-
+      const pos = getTouchPos(event);
       ctx.beginPath();
-      ctx.moveTo(lastX, lastY);
-      ctx.lineTo(currentX, currentY);
-      ctx.strokeStyle = 'black'; // Set line color
-      ctx.lineWidth = 2; // Set line thickness
+      ctx.moveTo(lastX, lastY); // Start from the last position
+      ctx.lineTo(pos.x, pos.y); // Draw to the current touch position
+      ctx.strokeStyle = 'black'; // Set the line color
+      ctx.lineWidth = 2; // Set the line width
+      ctx.lineCap = 'round'; // Smooth line edges
       ctx.stroke();
 
-      lastX = currentX;
-      lastY = currentY;
+      // Update the last position
+      lastX = pos.x;
+      lastY = pos.y;
+
+      // Prevent scrolling while drawing
+      event.preventDefault();
     }
 
     // Stop drawing
     function stopDrawing() {
-      drawing = false;
+      isDrawing = false;
     }
 
     // Event listeners for touch events
@@ -65,8 +78,11 @@ var x = "rgba(255, 255, 255, 0.70)",
     canvas.addEventListener('touchend', stopDrawing);
     canvas.addEventListener('touchcancel', stopDrawing);
 
-    // Prevent scrolling on touch devices while drawing
-    document.body.addEventListener('touchstart', (e) => e.preventDefault(), { passive: false });
-    document.body.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+    // Prevent the default scrolling behavior on touch devices
+    document.body.addEventListener(
+      'touchmove',
+      (event) => event.preventDefault(),
+      { passive: false }
+    );
  
 
