@@ -18,38 +18,17 @@ function init() {
     w = canvas.width;
     h = canvas.height;
 
-    canvas.addEventListener("mousemove", function (e) {
+    canvas.addEventListener("pointermove", function (e) {
         findxy('move', e)
     }, false);
-    canvas.addEventListener("mousedown", function (e) {
+    canvas.addEventListener("pointerdown", function (e) {
         findxy('down', e)
     }, false);
-    canvas.addEventListener("mouseup", function (e) {
+    canvas.addEventListener("pointerup", function (e) {
         findxy('up', e)
     }, false);
-    canvas.addEventListener("mouseout", function (e) {
+    canvas.addEventListener("pointerout", function (e) {
         findxy('out', e)
-    }, false);
-}
-
-function initTouch() {
-    canvas = document.getElementById('can');
-    ctx = canvas.getContext("2d");
-    //this is what set's the boundaries for the chalk to draw on, that's why you need HTML attributes of width and height otherwise these values can't know the boundaries for where you can draw on
-    w = canvas.width;
-    h = canvas.height;
-
-    canvas.addEventListener("touchmove", function (e) {
-        findxy('fmove', e)
-    }, false);
-    canvas.addEventListener("touched", function (e) {
-        findxy('fdown', e)
-    }, false);
-    canvas.addEventListener("touchcancel", function (e) {
-        findxy('fup', e)
-    }, false);
-    canvas.addEventListener("touchend", function (e) {
-        findxy('fout', e)
     }, false);
 }
 
@@ -129,38 +108,6 @@ function findxy(res, e) {
 
 
 
-//-----------------------------
 
-    if (res == 'fdown') {
-        prevX = currX;
-        prevY = currY;
-        currX = e.clientX - canvas.offsetLeft;
-        currY = e.clientY - canvas.offsetTop;
-
-        flag = true;
-        dot_flag = true;
-        
-        if (dot_flag) {
-            ctx.beginPath();
-            ctx.fillStyle = x;
-            ctx.fillRect(currX, currY, 2, 2);
-            ctx.closePath();
-            dot_flag = false;
-        }
-    }
-    
-    if (res == 'fup' || res == "fout") {
-        flag = false;
-    }
-    
-    if (res == 'fmove') {
-        if (flag) {
-            prevX = currX;
-            prevY = currY;
-            currX = e.clientX - canvas.offsetLeft;
-            currY = e.clientY - canvas.offsetTop;
-            draw();
-        }
-    }
 }
 
