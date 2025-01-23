@@ -1,8 +1,21 @@
-*Figure out how to run the app in a linux machine
-
 *Add instructions on running the app in a linux machine to readme file
+-go to themes, activate the theme called custom theme child
+-apperance editor/templates/index (click on the screen to the right/add a block, seach for content/select/save)
+-activate all plugins
+-settings general(this should be setup durint wp install)
++tittle Scribble, email: test@test
 
-*figure out how to deploy it in AWS
+!!!-settings/ reading
++static page
++homepage = home
+
+create a new database
+name scribble
+create table = notes
+columns = id(type: bigint 20, under index: PRIMARY, check the A_I(auto increment) button), use_id(type: int 50), notes(type: varchar 500)
+
+
+*Figure out how to make database work
 
 *figure a way to clear the database when app is loaded
 
@@ -33,6 +46,7 @@
 
 ## Starting up the app
 #### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker-compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
+- If you are running wordpress in the system por the first time, you'll be prompted with a setup page. enter the requested info.
 #### To edit your wp page go to `http://localhost:8000/wp-admin/` username and password are both set as admin.
 #### To access phpMyAdmin go to `http://localhost:8080/` Username is `root` and password is `password` (these are set up in the `docker-compose.yml` file)
 

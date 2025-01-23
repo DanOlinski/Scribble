@@ -2,6 +2,11 @@
     //include database connection script
     include './mydbfile.php';
 
+    // $note = $_POST["new_note"];
+    $userid = get_current_user_id();
+    
+    var_dump("insert into notes (user_id, note) values('$userid', '$note')");
+
     //check that there is a value typed into the form (select form by name)
     if( strlen($_POST['new_note']) > 0 ){
         
@@ -14,6 +19,8 @@
         
          //send query to db
         $conn->query($sql);
+        
+
         //close connection with database
         $conn->close();
     }
