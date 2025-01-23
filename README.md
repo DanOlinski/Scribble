@@ -15,10 +15,10 @@ create table = notes
 columns = id(type: bigint 20, under index: PRIMARY, check the A_I(auto increment) button), use_id(type: int 50), notes(type: varchar 500)
 
 
-*Figure out how to make database work (I'm not managing to capture the note value in the create.php file, but in the edit file I am, mabe its because the page is refreshing)(there is an issue w line 23 on s-notes.php)
+*Figure out how to make database work (I'm not managing to capture the note value in the create.php file, but in the edit file I am, mabe its because the page is refreshing)(there is an issue w line 23 on s-notes.php)(try to place java script file in the header.php file)
 
 *figure a way to clear the database when app is loaded
-
+*fix scribble function==javascript/scribbleFunctionality.js
 *Adjust the website to look good in any device
 
 ## About

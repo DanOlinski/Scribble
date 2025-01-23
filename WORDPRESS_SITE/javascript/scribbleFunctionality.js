@@ -32,6 +32,27 @@ function init() {
     }, false);
 }
 
+function initTouch() {
+    canvas = document.getElementById('can');
+    ctx = canvas.getContext("2d");
+    //this is what set's the boundaries for the chalk to draw on, that's why you need HTML attributes of width and height otherwise these values can't know the boundaries for where you can draw on
+    w = canvas.width;
+    h = canvas.height;
+
+    canvas.addEventListener("touchmove", function (e) {
+        findxy('move', e)
+    }, false);
+    canvas.addEventListener("touched", function (e) {
+        findxy('down', e)
+    }, false);
+    canvas.addEventListener("touchcancel", function (e) {
+        findxy('up', e)
+    }, false);
+    canvas.addEventListener("touchend", function (e) {
+        findxy('out', e)
+    }, false);
+}
+
 function color(obj) {
     switch (obj.id) {
         case "green":

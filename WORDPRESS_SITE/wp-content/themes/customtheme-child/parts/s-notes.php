@@ -20,7 +20,10 @@
 ?>
 
 <!-- when creating a new note this jQuery function handles the data coming in from the html -->
-<!-- <script src="./javascript/clearNewNoteDiv.js" ></script> -->
+<script 
+src="./javascript/clearNewNoteDiv.js" 
+></script>
+
 
 <div id="s-notes-db-container" class="s-notes-db-container">
     <?php
@@ -43,4 +46,3 @@
     </div>
 </div>
 
-<script src="./javascript/clearNewNoteDiv.js" ></script>
