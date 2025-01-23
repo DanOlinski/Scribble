@@ -15,7 +15,8 @@
         $user_id = get_current_user_id();
         
         //use the information above to create a query to the database and save the new information typed into the form
-        $sql="insert into notes (user_id, note) values('$user_id', '$new_note')";
+        $sql="insert into notes (user_id, note) values('$user_id', 'tt')";
+        // $sql="insert into notes (user_id, note) values('$user_id', '$new_note')";
         
          //send query to db
         $conn->query($sql);
