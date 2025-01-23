@@ -9,7 +9,7 @@
     var_dump("insert into notes (user_id, note) values('$userid', '$note')");
 
     //check that there is a value typed into the form (select form by name)
-    // if( strlen($_POST['new_note']) > 0 ){
+    if( strlen($_POST['new_note']) > 0 ){
         
         //garb data from html elements by their names
         $new_note = $_POST["new_note"];
@@ -24,6 +24,6 @@
 
         //close connection with database
         $conn->close();
-    // }
+    }
 
 ?>
