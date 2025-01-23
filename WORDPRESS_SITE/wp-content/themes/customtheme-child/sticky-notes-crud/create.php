@@ -24,3 +24,4 @@
     }
 
 ?>
+<script src="./javascript/clearNewNoteDiv.js" ></script>
