@@ -21,7 +21,7 @@ $(document).ready(function() {
                 dataType: "text",
             })
 
-            // Response.Redirect("Currentpage.aspx",true);
+            Response.Redirect("Currentpage.aspx",true);
 
             //reload the page so that the newly created note can be loaded from the database onto the front end
             location.reload();
