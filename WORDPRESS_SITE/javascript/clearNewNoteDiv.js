@@ -31,7 +31,7 @@ $(document).ready(function() {
             `));
 
             //reload the page so that the newly created note can be loaded from the database onto the front end
-            location.reload();
+            // location.reload();
         }
     })
 });
