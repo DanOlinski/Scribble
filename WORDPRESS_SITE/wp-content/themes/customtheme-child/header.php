@@ -79,5 +79,8 @@
                 <div id="clr" onclick="erase()" class="clear-button">clear scribble
             </div>
 
+            <div class="construction">SITE UNDER CONSTRUCTION!
+            </div>
+
         </header>
 
