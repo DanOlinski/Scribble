@@ -33,6 +33,20 @@ body {
     align-items: center;
 }
 
+.left-of-header{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+}
+.right-of-header{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+    
+}
+
 .footer {
     display: flex;
     align-content: end;
@@ -102,7 +116,7 @@ body {
     z-index: 2;
     margin-top: 0px;
     width: 110px;
-    margin-left: 35px;
+    margin-left: 30px;
     font-size: medium;
     background-color: #5d4b3366;
     padding: 3px;
@@ -284,4 +298,33 @@ body {
     margin-left: 50px;
     // margin-top: 245px;
     }
+
+    .header{
+        justify-content: space-between;
+        
+    }
+    .right-of-header{
+        margin-right: 32px;
+    }
 }
+
+@media (max-width:377px){
+    .s-notes-db-container {
+        margin-top: 171px;
+    }
+
+    .scribble-options {
+        float: left;
+        margin-left: 6px;
+    }
+
+}
+
+@media (max-width:377px){
+ 
+    .header-links {
+        
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    }

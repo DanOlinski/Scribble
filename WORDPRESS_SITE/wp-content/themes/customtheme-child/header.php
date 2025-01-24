@@ -27,11 +27,16 @@
     <body onload="init()">
         <header>
             <div class="header">
+
+                <div class='left-of-header'>
                 <img class='logo' src="./wp-content/themes/customtheme-child/assets/logo.png">
                 
                 <div class="header-links" >Scribble
                 </div>
+                </div>
+
                 
+                <div class='right-of-header'>
                 <div id="home" class="header-links" >&#160&#160&#160Home
                 </div>
 
@@ -39,6 +44,7 @@
                 </div>
 
                 <div id="about" class="header-links" >About
+                </div>
                 </div>
             </div>
 
