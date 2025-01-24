@@ -25,13 +25,13 @@ $(document).ready(function() {
             // $('#form').empty();
 
             //after the html element is emptied out, it needs to be placed in the browser once again for the next data entry to be possible
-            $('#form').append($(`
-                <input id="new_note" class="s-notes-submit" type="submit" name="notes_create" value="✔"> 
-                <textarea id="text" class="s-notes-input" name="new_note" required="" value=""></textarea>
-            `));
+            // $('#form').append($(`
+            //     <input id="new_note" class="s-notes-submit" type="submit" name="notes_create" value="✔"> 
+            //     <textarea id="text" class="s-notes-input" name="new_note" required="" value=""></textarea>
+            // `));
 
             //reload the page so that the newly created note can be loaded from the database onto the front end
-            location.reload();
+            // location.reload();
         }
     })
 });
