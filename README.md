@@ -1,15 +1,3 @@
-
-*add instructions to run the app, test those instructions
-??mabe not??-apperance editor/templates/index (click on the screen to the right/add a block, seach for content/select/save)
-
-??mabe not??-activate all plugins
-
-
-*fix firefox shwong overlapped notes (try, when an item is selected, bring it to front)
-*figure a way to clear the database when app is loaded
-
-*Remover the text "Under construction" from pallet.php and header.php
-
 ## About
 - This is a presentation wordpress CRUD app
 - on the interface you can add notes (these notes are saved to a database, they can be updated and deleted from the user interface)
