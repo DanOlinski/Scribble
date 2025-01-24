@@ -1,25 +1,23 @@
-*Add instructions on running the app in a linux machine to readme file
+
+
 -go to themes, activate the theme called custom theme child
--apperance editor/templates/index (click on the screen to the right/add a block, seach for content/select/save)
--activate all plugins
+
+??mabe not??-apperance editor/templates/index (click on the screen to the right/add a block, seach for content/select/save)
+
+??mabe not??-activate all plugins
+
 -settings general(this should be setup durint wp install)
-+tittle Scribble, email: test@test
++tittle Scribble
 
 !!!-settings/ reading
 +static page
 +homepage = home
 
-create a new database
-name scribble
-create table = notes
-columns = id(type: bigint 20, under index: PRIMARY, check the A_I(auto increment) button), use_id(type: int 50), notes(type: varchar 500)
+!!javascript/clearNewNoteDiv.jss file there is a url there that needs to be updated
 
-
-*Figure out how to make database work (I'm not managing to capture the note value in the create.php file, but in the edit file I am, mabe its because the page is refreshing)(there is an issue w line 23 on s-notes.php)(try to place java script file in the header.php file)
-
+*fix not
+*fix firefox asking for permission to refresh
 *figure a way to clear the database when app is loaded
-*fix scribble function==javascript/scribbleFunctionality.js
-*Adjust the website to look good in any device
 
 ## About
 - This is a presentation wordpress CRUD app
@@ -46,10 +44,16 @@ columns = id(type: bigint 20, under index: PRIMARY, check the A_I(auto increment
 
 ## Starting up the app
 #### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker-compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
-- If you are running wordpress in the system por the first time, you'll be prompted with a setup page. enter the requested info.
+- If you are running wordpress in the system for the first time, you'll be prompted with a setup page. enter the requested info.
 #### To edit your wp page go to `http://localhost:8000/wp-admin/` username and password are both set as admin.
 #### To access phpMyAdmin go to `http://localhost:8080/` Username is `root` and password is `password` (these are set up in the `docker-compose.yml` file)
 
 ## Run sass compiler
 #### In order to compile sass stylesheet during development you need to run `npm i` from within the `customtheme-child` folder to install all necessary dependencies, using the WSL Shell terminal(if you are using windows).
 #### Secondly run the command; `npm run compile` (this will open a process that will automatically compile any changes you make in the `./WORDPRESS_SITE/wp-content/themes/customtheme-child/styles/style.scss` file)
+#### This website doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`
+- Create a new database, name it `scribble`
+- Create a new table with 3 columns, name it `notes`
+    - Column1 = id (type: bigint 20. Under index: chose PRIMARY, check the A_I(auto increment) button)
+    - Column2 = use_id (type: INT 50) 
+    - Column3 = notes(type: VARCHAR 500)
