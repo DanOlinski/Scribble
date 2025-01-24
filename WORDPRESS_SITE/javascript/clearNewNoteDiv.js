@@ -10,16 +10,16 @@ $(document).ready(function() {
 
         //before running the script check if there is a value typed into the new note form
         if($('#text').val()) {
-            console.log($('#text').val())
+            // console.log($('#text').val())
             
             //grab the form data and make it available in the specified url, where the php code can handle the data and save it in the database
-            $.ajax({
-                method: "post",
-                // url: "http://localhost:8000/",
-                url: "http://18.234.204.90:8000/",
-                data: $('#form').serialize(),
-                dataType: "text",
-            })
+            // $.ajax({
+            //     method: "post",
+            //     url: "http://localhost:8000/",
+            //     // url: "http://18.234.204.90:8000/",
+            //     data: $('#form').serialize(),
+            //     dataType: "text",
+            // })
 
             //after the data is made available for pho script empty out the html element (some browsers like chrome have caching features making the app think there is always data typed into the form, causing the app to save repeated data into the database when the browser is refreshed)
             // $('#form').empty();
@@ -31,7 +31,7 @@ $(document).ready(function() {
             `));
 
             //reload the page so that the newly created note can be loaded from the database onto the front end
-            // location.reload();
+            location.reload();
         }
     })
 });
