@@ -27,4 +27,7 @@
                 </div>
 
                 <div id="clr" onclick="erase()" class="clear-button">clear scribble
+
+                <div class="construction">SITE UNDER CONSTRUCTION!
+                </div>
             </div>
