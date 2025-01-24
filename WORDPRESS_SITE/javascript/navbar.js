@@ -8,6 +8,9 @@ $(document).ready(function() {
         //prevent the page from reloading
         event.preventDefault();
 
+        //remove pallet
+        $('#pallet-div').empty();
+        
         //load the html file located in the specified path
         $('#main').load('./wp-content/themes/customtheme-child/parts/about.php');
     })
@@ -17,7 +20,10 @@ $(document).ready(function() {
         //prevent the page from reloading
         event.preventDefault();
 
-        //empty content of <div ="main">. This would be the content f the about page, in case the about page is being displayed, when clicking on the home link it will remove the about page from the browser
+        //empty content of <div ="main">. This would be the content of the about page, in case the about page is being displayed, when clicking on the home link it will remove the about page from the browser
         $('#main').empty();
+
+        //load the html file located in the specified path to place pallet back in the page
+        $('#pallet-div').load('./wp-content/themes/customtheme-child/parts/pallet.php');
     })
 });

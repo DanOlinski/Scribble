@@ -67,7 +67,7 @@ body {
   position: fixed;
   max-height: 60%;
   overflow: overlay;
-  margin-top: 130px;
+  margin-top: 93px;
   margin-right: 100px;
   margin-left: 100px;
   margin-bottom: 10px;
@@ -278,7 +278,6 @@ body {
   .about_text {
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 245px;
   }
 }
 

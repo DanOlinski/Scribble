@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="scribble-options">
+            <div id="pallet-div" class="scribble-options">
                 <div class="pallet">
                 
                     <div class="green-pallet pallet-color-default" id="green"
@@ -72,5 +72,6 @@
 
                 <div id="clr" onclick="erase()" class="clear-button">clear scribble
             </div>
+
         </header>
 
