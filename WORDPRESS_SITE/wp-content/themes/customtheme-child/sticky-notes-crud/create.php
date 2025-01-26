@@ -1,7 +1,7 @@
 <?php
     //include database connection script
     include './mydbfile.php';
-    var_dump(getenv("REMOTE_ADDR"));
+
     //check that there is a value typed into the form (select form by name)
     if( strlen($_POST['new_note']) > 0 ){
         
