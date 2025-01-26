@@ -1,16 +1,3 @@
-*figure a way to clear the database when app is loaded (I can try to make the database inserts save a person's IP address and only display the content that particular IP address added, if that works I'll have to setup a quey to clear the database every so often so that I don't overload my AWS storage space)
--*scribble: on load, set an alert saying, the database will be reset in 10min
--you can have a welcome page w a button to enter the website, when that button is clicked the db is reset. append the page just like the about page making the screen all blurred
-+when the blurred page loads include the cleardb file
-+I need to serve 2 wordpress site(one of the sites is the welcome page that resets the database, the other one is the actual site)
--side server is ment for restarting the database. start the actual server 1st
-
-
-
-*fix the rout on clearNewNoteDiv.js
-*Remover the text "Under construction" from pallet.php and header.php
-
-
 ## About
 - This is a presentation wordpress CRUD app
 - on the interface you can add notes (these notes are saved to a database, they can be updated and deleted from the user interface)
@@ -52,6 +39,7 @@
     - Column1 = id (type: bigint 20. Under index: chose PRIMARY, check the A_I(auto increment) button)
     - Column2 = user_id (type: VARCHAR 50) 
     - Column3 = note (type: VARCHAR 500)
+    - To clear the database type the following sql query: `delete from notes`
 
 ### For the correct content to show up, there are some settings that need to be changed from the default Wordpress settings
 - Go to rout `http://localhost:8000/wp-admin/`
