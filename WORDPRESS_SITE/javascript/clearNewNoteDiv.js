@@ -16,7 +16,8 @@ $(document).ready(function() {
             $.ajax({
                 method: "post",
                 // url: "http://localhost:8000/",
-                url: "http://18.234.204.90:8000/",
+                // url: "http://18.234.204.90:8000/",
+                url: "http://44.211.216.107:8000/",
                 data: $('#form').serialize(),
                 dataType: "text",
             })

@@ -1,3 +1,15 @@
+
+*add instructions to run the app, test those instructions
+??mabe not??-apperance editor/templates/index (click on the screen to the right/add a block, seach for content/select/save)
+??mabe not??-activate all plugins
+
+*when pressing the clear button the new notes dont load, unless you refresh the page, then insert a new note.
+*fix firefox shwong overlapped notes (try, when an item is selected, bring it to front)
+*figure a way to clear the database when app is loaded (I can try to make the database inserts save a person's IP address and only display the content that particular IP address added, if that works I'll have to setup a quey to clear the database every so often so that I don't overload my AWS storage space)
+-*scribble: on load, set an alert saying, the database will be reset in 10min
+
+*Remover the text "Under construction" from pallet.php and header.php
+
 ## About
 - This is a presentation wordpress CRUD app
 - on the interface you can add notes (these notes are saved to a database, they can be updated and deleted from the user interface)
