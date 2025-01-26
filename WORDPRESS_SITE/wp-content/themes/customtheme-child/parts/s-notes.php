@@ -24,7 +24,7 @@
 src="./javascript/clearNewNoteDiv.js" 
 ></script>
 
-
+<div class="s-notes-border-"></div>
 <div id="s-notes-db-container" class="s-notes-db-container">
     <?php
         echo '

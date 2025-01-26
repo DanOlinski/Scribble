@@ -21,7 +21,7 @@
         echo "<br>";
         echo '
             <form method="POST" role="form" class="s-notes-db">
-            
+                
                 <input type="submit" name="update_note_btn" value="✔" class="s-notes-submit">
                 
                 <input type="hidden" name="id" value="'.$x[0].'">
@@ -29,7 +29,7 @@
                 <textarea type="text" name="update_note" class="s-notes-input">'.$x[2].'</textarea>
                 
                 <input type="submit" name="delete_note" value="x" class="s-notes-delete">
-            
+                
             </form>
         ';
     }

@@ -216,7 +216,7 @@ body {
   text-decoration: none;
   color: #000;
   transform: rotate(-3deg);
-  margin-top: -73px;
+  margin-top: -77px;
   margin-left: -113px;
   max-width: 100px;
   margin-bottom: 0px;
@@ -276,6 +276,14 @@ body {
   margin-top: 74px;
 }
 
+.s-notes-db:hover {
+  z-index: 9;
+}
+
+.s-notes-input {
+  box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
+}
+
 .afc_images {
   width: 145px;
   transform: rotate(-3deg);
@@ -284,6 +292,11 @@ body {
   position: relative;
   top: 94px;
   left: -4px;
+}
+
+.afc_images:hover {
+  z-index: 9;
+  box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
 }
 
 @media (max-width: 520px) {
