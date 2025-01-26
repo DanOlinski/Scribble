@@ -5,16 +5,19 @@
     global $wpdb;
     include './wp-load.php';
 
-    //get current user ID, with default value, if empty. This variable is only used when there is a logged system and you only want to display the info that belongs to the logged in user
-    $current_user_id = get_current_user_id();
+     //save client's IP address in order to display only the notes inserted by the particular user;
+     $ip = getenv("REMOTE_ADDR");
+     $current_user_id = json_encode($ip);
 
     //the 1st commented out query checks for a logged in user in order to only display info from a given user
     // $sql = "select * from notes where user_id = ".$current_user_id;
-    $sql = "select * from notes";
-
+    $sql = "select * from notes where user_id=".$current_user_id."";
+    
+    
     //store data coming from the database as a result of the $sql query
     $result = $conn->query($sql);
     $result_arr = $result->fetch_all();
+    
 
     //loop through each db item and display it
     foreach($result_arr as $x){

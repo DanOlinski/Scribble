@@ -1,4 +1,5 @@
 <div id="pallet-div" class="scribble-options">
+
                 <div class="pallet">
                 
                     <div class="green-pallet pallet-color-default" id="green"
@@ -28,6 +29,7 @@
 
                 <div id="clr" onclick="erase()" class="clear-button">clear scribble
 
-                <div class="construction">SITE UNDER CONSTRUCTION!
+                    </div>
+                    <div id="construction" class="construction">SITE UNDER CONSTRUCTION!
                 </div>
-            </div>
+

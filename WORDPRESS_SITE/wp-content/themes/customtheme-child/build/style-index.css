@@ -299,6 +299,38 @@ body {
   box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
 }
 
+.welcome {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+.welcome-button {
+  background-color: rgba(226, 204, 204, 0.31);
+  height: 48px;
+  width: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 91px;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.66);
+  text-decoration: unset;
+  font-weight: bolder;
+}
+
+.welcome-button:hover {
+  border-color: rgba(248, 243, 243, 0.2196078431);
+  border-width: 2px;
+  border-style: solid;
+}
+
 @media (max-width: 520px) {
   .pallet {
     margin-top: 92px;

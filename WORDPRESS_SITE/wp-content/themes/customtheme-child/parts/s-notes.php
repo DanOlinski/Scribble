@@ -3,11 +3,11 @@
     include './mydbfile.php';
     //file below saves new notes to database
     include './wp-content/themes/customtheme-child/sticky-notes-crud/create.php';
-
-    //handle the delete note from db functionality
-    if( isset($_POST['delete_note']) ){
-        include './wp-content/themes/customtheme-child/sticky-notes-crud/delete.php';
-    }
+    
+     //handle the delete note from db functionality
+ if( isset($_POST['delete_note']) ){
+    include './wp-content/themes/customtheme-child/sticky-notes-crud/delete.php';
+}
 
     // handle update from db note functionality
     if( isset($_POST['update_note']) ){
@@ -19,12 +19,13 @@
     $afc_image2 = get_field('image2');
 ?>
 
-<!-- when creating a new note this jQuery function handles the data coming in from the html -->
+<!-- when creating a new note this jQuery function handles the data coming in from the html, the name of this file is off putting, it should be changed -->
 <script 
 src="./javascript/clearNewNoteDiv.js" 
 ></script>
 
-<div class="s-notes-border-"></div>
+
+<!-- //this appends the acf images -->
 <div id="s-notes-db-container" class="s-notes-db-container">
     <?php
         echo '
@@ -38,6 +39,7 @@ src="./javascript/clearNewNoteDiv.js"
         include './wp-content/themes/customtheme-child/sticky-notes-crud/read.php';
     ?>
 
+    <!-- The div below renders a blank note where the user can create a new note -->
     <div id="div">
         <form id="form" class="s-notes" method="POST" role="form">
             <input id="new_note" class="s-notes-submit" type="submit" name="notes_create" value="✔">

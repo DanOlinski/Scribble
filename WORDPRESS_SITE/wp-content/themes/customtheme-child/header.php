@@ -24,12 +24,14 @@
         </script>
     </head>
 
-    <body onload="init()">
+    <body onload="init()" class='body'>
+
         <header>
+
             <div class="header">
 
                 <div class='left-of-header'>
-                <img class='logo' src="./wp-content/themes/customtheme-child/assets/logo.png">
+                <img id='logo' class='logo' src="./wp-content/themes/customtheme-child/assets/logo.png">
                 
                 <div class="header-links" >Scribble
                 </div>
