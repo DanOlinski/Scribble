@@ -15,8 +15,8 @@ $(document).ready(function() {
             //grab the form data and make it available in the specified url, where the php code can handle the data and save it in the database
             $.ajax({
                 method: "post",
-                // url: "http://localhost:8000/",
-                url: "http://18.234.204.90:8000/",
+                url: "http://localhost:8000/",
+                // url: "http://18.234.204.90:8000/",
                 data: $('#form').serialize(),
                 dataType: "text",
             })
