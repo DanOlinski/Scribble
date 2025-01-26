@@ -39,6 +39,7 @@
 #### To edit your wp page go to `http://localhost:8000/wp-admin/` username and password are both set as admin unless you chose something different during setup.
 
 #### To access phpMyAdmin go to `http://localhost:8080/` Username is `root` and password is `password` (these are set up in the `docker-compose.yml` file)
+- If you're using a WLS you need to have the docker application open and running
 
 #### This website doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`
 - Create a new database, name it `scribble`
