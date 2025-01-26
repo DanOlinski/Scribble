@@ -16,6 +16,7 @@
     $result = $conn->query($sql);
     $result_arr = $result->fetch_all();
     
+    var_dump($sql);
 
     //loop through each db item and display it
     foreach($result_arr as $x){
