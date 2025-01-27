@@ -30,6 +30,6 @@
                 <div id="clr" onclick="erase()" class="clear-button">clear scribble
 
                     </div>
-                    <!-- <div id="construction" class="construction">SITE UNDER CONSTRUCTION!
-                </div> -->
+                    <div id="construction" class="construction">SITE UNDER CONSTRUCTION!
+                </div>
 

@@ -56,3 +56,8 @@
 ## Run sass compiler
 #### In order to compile sass stylesheet during development you need to run `npm i` from within the `customtheme-child` folder to install all necessary dependencies, using the WSL Shell terminal(if you are using windows).
 #### Secondly run the command; `npm run compile` (this will open a process that will automatically compile any changes you make in the `./WORDPRESS_SITE/wp-content/themes/customtheme-child/styles/style.scss` file)
+
+## To work on:
+- The database queries are made in php code, since php is rendered on the server and doesn't interact with the DOM, there is no way to see front end changes unless the website is refreshed. This creates an awful UX. 
+    - change the database requests to be done in javascript
+    - when a db request is complete append the newly added info into the DOM without refreshing the page
