@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wordpress/scripts": "^27.3.0"
+    "@wordpress/scripts": "^27.3.0",
+    "axios": "^1.7.9",
+    "mysql": "^2.18.1"
   },
   "description": ""
 }

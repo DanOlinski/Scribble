@@ -11,6 +11,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./javascript/scribbleFunctionality.js" ></script>
         <script src="./javascript/navbar.js" ></script>
+       
+       
+        <script type="module"  src="./javascript/dbTesting.js" ></script>
+       
         <script type ="application/ld+json">
             //in order to test if the schema is working visit: https://developers.google.com/search/docs/advanced/structured-data
             //update this information after launching website
