@@ -18,14 +18,14 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-//the home route displays a message on the browser when viewing the url http://localhost:8100/
+//the home route displays a message on the browser when viewing the url http://localhost:8101/
 //the file that contains the HTML info is located in views/index.ejs
 app.get('/', (req, res) => {
   res.render('index');
 });
 
 //Below is a route that displays info from the database
-//Rout url: http://localhost:8100/notes
+//Rout url: http://localhost:8101/notes
 const notes = require('./routes/allNotes');
 app.use('/notes', notes);
 

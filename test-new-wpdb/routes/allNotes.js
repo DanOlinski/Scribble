@@ -4,7 +4,7 @@ const generalQueries = require('../db/queries/generalQueries');
 const axios = require('axios');
 
 //This rout displays all emails saved into the database. To visualize these you can either make an API request to this end point or visit the url below using your browser.
-//http://localhost:8100/notes
+//http://localhost:8101/notes
 router.get('/', (req, res) => {
 
   generalQueries.getAllNotes()
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 
 //This rout saves a new note
-//http://localhost:8100/notes/new
+//http://localhost:8101/notes/new
 router.put('/new', (req, res) => {
 
   //expected object: {user_id: xx, note: xx}
@@ -33,7 +33,7 @@ router.put('/new', (req, res) => {
 });
 
 //This rout deletes a note
-//http://localhost:8100/notes/delete
+//http://localhost:8101/notes/delete
 router.put('/delete', (req, res) => {
 
   //expected object: {id: xx}
@@ -49,7 +49,7 @@ router.put('/delete', (req, res) => {
 });
 
 //This rout updates a note
-//http://localhost:8100/notes/update
+//http://localhost:8101/notes/update
 router.put('/update', (req, res) => {
 
   //expected object: {id: xx, note: xx}
