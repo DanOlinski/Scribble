@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const express = require('express');
 const morgan = require('morgan');
-const PORT = process.env.PORT || 8100;
+const PORT = process.env.PORT || 8101;
 const app = express();
 
 app.set('view engine', 'ejs');
