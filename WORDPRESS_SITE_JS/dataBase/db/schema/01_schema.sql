@@ -4,6 +4,7 @@
 DROP TABLE IF EXISTS notes CASCADE;
 
 CREATE TABLE notes (
+  -- id SERIAL PRIMARY KEY NOT NULL, id should be like this, I changed it temporarily for some testing
   id VARCHAR(500) NOT NULL,
   user_id VARCHAR(500),
   note VARCHAR(255)
