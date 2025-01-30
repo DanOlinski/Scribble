@@ -104,7 +104,7 @@ body {
 }
 
 .scroll-notes{
-    margin-top: 88px;
+    margin-top: 55px;
     // max-height: 500px;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -167,6 +167,7 @@ body {
 }
 
 .pallet {
+    margin-top: 33px;
     display: flex;
     padding: 9px;
     width: 100%;
@@ -383,7 +384,7 @@ form-container-div{
 
 @media (max-width:520px){
     .pallet{
-        margin-top: 92px;
+        margin-top: 118px;
     }
 
     .about_text{
