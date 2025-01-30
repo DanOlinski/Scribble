@@ -241,7 +241,7 @@ body {
 
     &-input {
         background: #ffc;
-    height: 90px;
+    height: 77px;
     width: 94px;
     // padding-top: 9px;
     box-shadow: 8px 6px 9px rgba(0, 0, 0, 0.51);
@@ -283,7 +283,7 @@ body {
         color: black;
         border-radius: 33px;
         position: relative;
-        top: -48px;
+        top: -43px;
         left: 36px;
         width: 26px;
         height: 26px;
@@ -294,7 +294,7 @@ body {
         color: black;
         border-radius: 17px;
         position: relative;
-        top: -42px;
+        top: -37px;
         left: 3px;
         width: 24px;
         height: 24px;
@@ -314,6 +314,10 @@ body {
     
     z-index: 9;
 }
+form-container-div{
+    z-index: 8;
+}
+
 .s-notes-input{
     box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
 }
