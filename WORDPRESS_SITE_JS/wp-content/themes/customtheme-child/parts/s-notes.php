@@ -13,6 +13,3 @@
 <div id="s-notes-db-container" class="s-notes-db-container" name="sticky-notes-container">
 </div>
 </div>
-
-<div class='scroll-line'>
-</div> 
