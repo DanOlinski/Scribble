@@ -236,7 +236,7 @@ body {
 }
 .s-notes-input {
   background: #ffc;
-  height: 77px;
+  height: 85px;
   width: 94px;
   box-shadow: 8px 6px 9px rgba(0, 0, 0, 0.51);
   border-color: rgba(255, 255, 255, 0);
@@ -245,7 +245,7 @@ body {
   border-top-width: 5px;
   outline-color: transparent;
   resize: none;
-  margin-bottom: -27px;
+  margin-bottom: -24px;
 }
 .s-notes-submit-new {
   position: relative;
@@ -274,7 +274,7 @@ body {
   color: black;
   border-radius: 33px;
   position: relative;
-  top: -43px;
+  top: -47px;
   left: 36px;
   width: 26px;
   height: 26px;
@@ -393,7 +393,7 @@ form-container-div {
     margin-top: -41px;
   }
   .s-notes-db-container {
-    margin-top: -32px;
+    margin-top: -34px;
   }
   .scribble-options {
     float: left;
