@@ -1,0 +1,411 @@
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./styles/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+body {
+  background-image: url(images/bg.584ad7a0.jpg);
+  background-color: rgb(37, 36, 36);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: sans-serif;
+  color: #f5e7d8;
+  overflow: hidden;
+}
+
+.logo {
+  height: 60px;
+  margin-left: 10px;
+}
+
+.header-links {
+  color: #f5e7d8;
+  text-decoration: unset;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header {
+  z-index: 2;
+  display: flex;
+  height: 87px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 18px;
+  background-color: rgba(28, 8, 8, 0.368627451);
+  width: 100%;
+  align-items: center;
+}
+
+.left-of-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-of-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footer {
+  display: flex;
+  align-content: end;
+  position: absolute;
+  right: 40px;
+  bottom: 45px;
+}
+
+.header-text {
+  text-decoration: none;
+}
+
+.acf_footer_home {
+  position: absolute;
+  bottom: 21px;
+  right: 45px;
+  font-size: 15px;
+}
+
+.acf_footer_about {
+  font-size: 15px;
+  text-align: end;
+  margin: 30px;
+  border: 100px;
+}
+
+.about_text {
+  position: fixed;
+  max-height: 60%;
+  overflow: overlay;
+  margin-top: 93px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.about_div {
+  position: absolute;
+  z-index: 1;
+  background-image: url(images/bg.584ad7a0.jpg);
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-color: rgb(59, 58, 58);
+}
+
+.canvas {
+  margin-top: 55px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  touch-action: none;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='38' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>✍🏻</text></svg>") 0 22, auto;
+}
+
+.scroll-notes {
+  margin-top: 88px;
+  max-height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 88vh;
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+}
+
+.scribble-options {
+  width: 188px;
+  height: 86px;
+  float: right;
+  margin-top: -91px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-button {
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+  width: 110px;
+  margin-left: 30px;
+  font-size: medium;
+  background-color: rgba(93, 75, 51, 0.4);
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.6509803922);
+  border-style: dashed;
+  cursor: pointer;
+}
+.clear-button-about-page {
+  position: fixed;
+  z-index: 2;
+  margin-top: 0px;
+  width: 110px;
+  margin-left: 35px;
+  font-size: medium;
+  background-color: rgba(93, 75, 51, 0.4);
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.6509803922);
+  border-style: dashed;
+  cursor: context-menu;
+  top: 108px;
+  right: 26px;
+}
+
+.button-text {
+  font-size: medium;
+}
+
+.pallet {
+  display: flex;
+  padding: 9px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pallet-color-default {
+  position: relative;
+  z-index: 2;
+  width: 46px;
+  height: 25px;
+  margin: 4px;
+}
+
+.green-pallet {
+  background: rgba(64, 230, 64, 0.785);
+}
+
+.blue-pallet {
+  background: rgba(0, 0, 255, 0.7);
+}
+
+.red-pallet {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.yellow-pallet {
+  background: rgba(248, 255, 41, 0.845);
+}
+
+.purple-pallet {
+  background: rgba(241, 112, 231, 0.768627451);
+}
+
+.white-pallet {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.s-notes {
+  top: 54px;
+  font-family: "Kalam", cursive;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  transform: rotate(-3deg);
+  margin-left: 15px;
+  margin-bottom: -105px;
+}
+.s-notes-db {
+  position: relative;
+  top: 150px;
+  left: 127.2px;
+  font-family: "Kalam", cursive;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  transform: rotate(-3deg);
+  margin-top: -77px;
+  margin-left: -113px;
+  max-width: 100px;
+  margin-bottom: 20px;
+  max-height: 165px;
+}
+.s-notes-input {
+  background: #ffc;
+  height: 90px;
+  width: 94px;
+  box-shadow: 8px 6px 9px rgba(0, 0, 0, 0.51);
+  border-color: rgba(255, 255, 255, 0);
+  border-left-width: 41px;
+  border-right-width: 6px;
+  border-top-width: 5px;
+  outline-color: transparent;
+  resize: none;
+  margin-bottom: -27px;
+}
+.s-notes-submit-new {
+  position: relative;
+  top: 150px;
+  left: 127.2px;
+  font-family: "Kalam", cursive;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  transform: rotate(-3deg);
+  margin-top: -81px;
+  margin-left: -113px;
+  max-width: 100px;
+}
+.s-notes-submit {
+  background-color: rgba(90, 255, 74, 0.61);
+  color: black;
+  border-radius: 17px;
+  position: relative;
+  top: 32px;
+  left: 3px;
+  width: 24px;
+}
+.s-notes-submit-new-note {
+  background-color: rgba(90, 255, 74, 0.61);
+  color: black;
+  border-radius: 33px;
+  position: relative;
+  top: -48px;
+  left: 36px;
+  width: 26px;
+  height: 26px;
+}
+.s-notes-delete {
+  background-color: rgba(255, 48, 48, 0.658);
+  color: black;
+  border-radius: 17px;
+  position: relative;
+  top: -42px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+}
+.s-notes-db-container {
+  float: left;
+  top: 20px;
+  display: flex;
+  width: 168px;
+  flex-direction: column-reverse;
+  margin-top: -27px;
+}
+
+.s-notes-db:hover {
+  z-index: 9;
+}
+
+.s-notes-input {
+  box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
+}
+
+.afc_images {
+  width: 145px;
+  transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  margin-left: 15px;
+  position: relative;
+  top: 94px;
+  left: -4px;
+}
+
+.afc_images:hover {
+  z-index: 9;
+  box-shadow: -1px 2px 9px 3px rgba(0, 0, 0, 0.51);
+}
+
+.welcome {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+.welcome-button {
+  background-color: rgba(226, 204, 204, 0.31);
+  height: 48px;
+  width: 214px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 91px;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.66);
+  text-decoration: unset;
+  font-weight: bolder;
+}
+
+.note-div {
+  margin-top: 18px;
+  position: relative;
+  z-index: 1;
+  margin-left: -33px;
+  max-width: 194px;
+}
+
+.welcome-button:hover {
+  border-color: rgba(248, 243, 243, 0.2196078431);
+  border-width: 2px;
+  border-style: solid;
+}
+
+@media (max-width: 520px) {
+  .pallet {
+    margin-top: 92px;
+  }
+  .about_text {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .right-of-header {
+    margin-right: 32px;
+  }
+}
+.construction {
+  color: #de6767;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (max-width: 377px) {
+  .pallet {
+    margin-top: -41px;
+  }
+  .s-notes-db-container {
+    margin-top: -32px;
+  }
+  .scribble-options {
+    float: left;
+    margin-left: -3px;
+    margin-top: -95px;
+  }
+  .scroll-notes {
+    margin-top: 222px;
+  }
+  .header-links {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .note-div {
+    top: -7px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

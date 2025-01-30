@@ -23,6 +23,10 @@
 
 ## Starting up the app
 
+#### In this repository there are 2 different versions of the same app. 
+- In the folder WORDPRESS_SITE_PHP, there is an app that runs mainly on php, it's not very interactive and has to reload at every change since php is a language that doesn't interact with the DOM. The reason why I kept this app is as a reference on interacting with database requests using php code and phpMyAdmin database interface.
+- In the folder WORDPRESS_SITE_JS, the app completes database requests and appends data to the DOM without having to refresh the page, using ajax and jquery. To run this app check the README file in the folder WORDPRESS_SITE_JS/dataBase
+
 #### Before you clone the repo and run it, there is a file located at `WORDPRESS_SITE/javascript/clearNewNoteDiv.js` in that file there is a url, with a default value of `http://localhost:8000`, that url needs to be changed to the value equal to the homepage url where you wish to serve the website.
 
 #### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker-compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
@@ -33,7 +37,7 @@
 #### To access phpMyAdmin go to `http://localhost:8080/` Username is `root` and password is `password` (these are set up in the `docker-compose.yml` file)
 - If you're using a WLS you need to have the docker application open and running
 
-#### This website doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`
+#### WORDPRESS_SITE_PHP doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`. is you are running WORDPRESS_SITE_PHP_JS, you can follow the instructions from the README file in WORDPRESS_SITE_JS/dataBase folder
 - Create a new database, name it `scribble`
 - Create a new table with 3 columns, name it `notes`
     - Column1 = id (type: bigint 20. Under index: chose PRIMARY, check the A_I(auto increment) button)
@@ -58,6 +62,4 @@
 #### Secondly run the command; `npm run compile` (this will open a process that will automatically compile any changes you make in the `./WORDPRESS_SITE/wp-content/themes/customtheme-child/styles/style.scss` file)
 
 ## To work on:
-- The database queries are made in php code, since php is rendered on the server and doesn't interact with the DOM, there is no way to see front end changes unless the website is refreshed. This creates an awful UX. 
-    - change the database requests to be done in javascript
-    - when a db request is complete append the newly added info into the DOM without refreshing the page
+- update description in all updated files in WORDPRESS_SITE_JS folder

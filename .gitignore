@@ -1,3 +1,3 @@
-/WORDPRESS_SITE/node_modules
-
-/WORDPRESS_SITE/wp-content/themes/customtheme-child/node_modules
+/WORDPRESS_SITE_PHP/wp-content/themes/customtheme-child/node_modules
+/WORDPRESS_SITE_JS/wp-content/themes/customtheme-child/node_modules
+/WORDPRESS_SITE_JS/database/node_modules

@@ -1,0 +1,17 @@
+{
+  "name": "customtheme-child",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "wp-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "^27.3.0",
+    "axios": "^1.7.9",
+    "mysql": "^2.18.1"
+  },
+  "description": ""
+}
