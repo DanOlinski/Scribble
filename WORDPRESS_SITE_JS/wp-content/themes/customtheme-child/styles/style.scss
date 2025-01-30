@@ -205,8 +205,35 @@ body {
     background: #f170e7c4;
 }
 
-.white-pallet {
+.white-pallet{
     background: rgba(255, 255, 255, 0.70);
+}
+
+.green-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+.green-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+
+.blue-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+
+.red-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+
+.yellow-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+
+.purple-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
+}
+
+.white-pallet:target {
+    box-shadow: 0px 0px 7px 3px rgb(255 255 255 / 35%)
 }
 
 .s-notes {  
