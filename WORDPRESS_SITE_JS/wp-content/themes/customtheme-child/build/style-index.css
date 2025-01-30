@@ -228,10 +228,10 @@ body {
   text-decoration: none;
   color: #000;
   transform: rotate(-3deg);
-  margin-top: -77px;
+  margin-top: -80px;
   margin-left: -113px;
   max-width: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   max-height: 165px;
 }
 .s-notes-input {
@@ -265,29 +265,30 @@ body {
   color: black;
   border-radius: 17px;
   position: relative;
-  top: 32px;
+  top: 35px;
   left: 3px;
-  width: 24px;
+  width: 29px;
+  height: 30px;
 }
 .s-notes-submit-new-note {
   background-color: rgba(90, 255, 74, 0.61);
   color: black;
   border-radius: 33px;
   position: relative;
-  top: -47px;
-  left: 36px;
-  width: 26px;
-  height: 26px;
+  top: -54px;
+  left: 39px;
+  width: 29px;
+  height: 30px;
 }
 .s-notes-delete {
   background-color: rgba(255, 48, 48, 0.658);
   color: black;
   border-radius: 17px;
   position: relative;
-  top: -46px;
+  top: -43px;
   left: 3px;
-  width: 24px;
-  height: 24px;
+  width: 29px;
+  height: 30px;
 }
 .s-notes-db-container {
   float: left;
