@@ -8,9 +8,8 @@ $(document).ready(function() {
         //prevent the page from reloading
         event.preventDefault();
 
-        //remove pallet
+        //hide some HTML elements
         $('#pallet-div').hide();
-        
         $('#s-notes-db-container').hide();
         $('#divid').hide();
 
@@ -18,6 +17,7 @@ $(document).ready(function() {
         $('#main').load('./wp-content/themes/customtheme-child/parts/about.php');
     })
 
+    //by clicking the home button the about page is removed
     //select the html element by the id, run an action when it is clicked
     $('#home').click((event)=>{
         //prevent the page from reloading
@@ -27,8 +27,7 @@ $(document).ready(function() {
         $('#main').empty();
         
 
-        //load the html file located in the specified path to place pallet back in the page
-   
+        //show the hidden html elements selected by id
         $('#pallet-div').show();
         $('#s-notes-db-container').show();
         $('#divid').show();

@@ -1,6 +1,6 @@
 <?php
     //the variable contain values from ACF fields
-    $last_update = get_field('last_update');
+    // $last_update = get_field('last_update');
 ?>
 
 <div class="footer">

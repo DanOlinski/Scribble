@@ -21,10 +21,8 @@ const renderNote = (data) => {
                 <input id="delete${escape(data.id)}" type="submit" name="delete_note" value="x" class="s-notes-delete">
             
             <script>
-
-
-            clickAction(${escape(data.id)})
             
+            clickAction(${data.id})
             
             </script>    
             

@@ -60,6 +60,3 @@
 ## Run sass compiler
 #### In order to compile sass stylesheet during development you need to run `npm i` from within the `customtheme-child` folder to install all necessary dependencies, using the WSL Shell terminal(if you are using windows).
 #### Secondly run the command; `npm run compile` (this will open a process that will automatically compile any changes you make in the `./WORDPRESS_SITE/wp-content/themes/customtheme-child/styles/style.scss` file)
-
-## To work on:
-- update description in all updated files in WORDPRESS_SITE_JS folder
