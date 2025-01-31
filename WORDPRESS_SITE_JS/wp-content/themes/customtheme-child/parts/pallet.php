@@ -31,6 +31,6 @@
                     <div id="clr" onclick="window.location.reload()" class="clear-button">clear scribble
                     </div>
 
-                <div class="construction">SITE UNDER CONSTRUCTION!</div>
+                <!-- <div class="construction">SITE UNDER CONSTRUCTION!</div> -->
 </div>
 
