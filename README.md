@@ -6,7 +6,7 @@
 - This includes SEO/schema
 - This app can be used to start a WordPress project from scratch that runs on docker. In order to do that, delete all of the files and folders from this project except for the `docker-compose.yml` file. You can use the custom theme and other features as a starting point for creating your own WordPress app.
 
-!["Screenshot of URLs page"](./WORDPRESS_SITE/wp-content/themes/customtheme-child/assets/Snapshot1.PNG)
+!["Screenshot of URLs page"](./WORDPRESS_SITE_JS/wp-content/themes/customtheme-child/assets/Snapshot1.PNG)
 
 ## Stack
 - php
