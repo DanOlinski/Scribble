@@ -37,13 +37,14 @@
 #### To access phpMyAdmin go to `http://localhost:8080/` Username is `root` and password is `password` (these are set up in the `docker-compose.yml` file)
 - If you're using a WLS you need to have the docker application open and running
 
-#### WORDPRESS_SITE_PHP doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`. is you are running WORDPRESS_SITE_JS, you can follow the instructions from the README file in WORDPRESS_SITE_JS/dataBase folder
-- Create a new database, name it `scribble`
-- Create a new table with 3 columns, name it `notes`
-    - Column1 = id (type: bigint 20. Under index: chose PRIMARY, check the A_I(auto increment) button)
-    - Column2 = user_id (type: VARCHAR 50) 
-    - Column3 = note (type: VARCHAR 500)
-    - To clear the database type the following sql query: `delete from notes`
+#### Setup Database
+- WORDPRESS_SITE_PHP doesn't have a schema file yet, so you'll have to go to php my admin served at `http://localhost:8080/`. If you are running WORDPRESS_SITE_JS, you can follow the instructions from the README file in WORDPRESS_SITE_JS/dataBase folder
+    - Create a new database, name it `scribble`
+    - Create a new table with 3 columns, name it `notes`
+        - Column1 = id (type: bigint 20. Under index: chose PRIMARY, check the A_I(auto increment) button)
+        - Column2 = user_id (type: VARCHAR 50) 
+        - Column3 = note (type: VARCHAR 500)
+        - To clear the database type the following sql query: `delete from notes`
 
 ### For the correct content to show up, there are some settings that need to be changed from the default Wordpress settings
 - Go to rout `http://localhost:8000/wp-admin/`
