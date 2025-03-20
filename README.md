@@ -27,7 +27,7 @@
 - In the folder WORDPRESS_SITE_PHP, there is an app that runs mainly on php, it's not very interactive and has to reload at every change since php is a language that doesn't interact with the DOM. The reason why I kept this app is as a reference on interacting with database requests using php code and phpMyAdmin database interface.
 - In the folder WORDPRESS_SITE_JS, the app completes database requests and appends data to the DOM without having to refresh the page, using ajax and jquery. To run this app check the README file in the folder WORDPRESS_SITE_JS/dataBase
 
-#### Before you clone the repo and run it, there is a file located at `WORDPRESS_SITE/javascript/clearNewNoteDiv.js` in that file there is a url, with a default value of `http://localhost:8000`, that url needs to be changed to the value equal to the homepage url where you wish to serve the website.
+#### If you are running the WORDPRESS_SITE_PHP version, before cloning the repo and run it, there is a file located at `WORDPRESS_SITE_PHP/javascript/clearNewNoteDiv.js` in that file there is a url, with a default value of `http://localhost:8000`, that url needs to be changed to the value equal to the homepage url where you wish to serve the website.
 
 #### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker-compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
 - If you are running wordpress in the system for the first time, you'll be prompted with a setup page. enter the requested info.
