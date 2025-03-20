@@ -29,7 +29,7 @@
 
 #### If you are running the WORDPRESS_SITE_PHP version, before cloning the repo and run it, there is a file located at `WORDPRESS_SITE_PHP/javascript/clearNewNoteDiv.js` in that file there is a url, with a default value of `http://localhost:8000`, that url needs to be changed to the value equal to the homepage url where you wish to serve the website.
 
-#### If running the WORDPRESS_SITE_JS version, before cloning the repository go to specified files below and update the info for all `http://localhost:8101/`; 
+#### If running the WORDPRESS_SITE_JS version, before cloning the repository go to specified files below and update the info for all `http://localhost:8101/` requests; 
     - WORDPRESS_SITE_JS/javascript/clickActions.js
     - WORDPRESS_SITE_JS/javascript/dbRequests.js
 
