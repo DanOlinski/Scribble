@@ -27,7 +27,7 @@ console.log(id)
         method: "put",
         data: { id: noteId, note: noteVal },
         // url: "http://localhost:8101/notes/delete",
-        url: "http://54.158.56.227:8101/notes/delete",
+        url: "http://http://44.204.238.202:8101/notes/delete",
         context: document.body,
         success: function () {
 
@@ -51,7 +51,7 @@ console.log(id)
         method: "put",
         data: { id: noteId, note: noteVal },
         // url: "http://localhost:8101/notes/update",
-        url: "http://54.158.56.227:8101/notes/update",
+        url: "http://44.204.238.202:8101/notes/update",
         context: document.body,
         success: function () {
 
