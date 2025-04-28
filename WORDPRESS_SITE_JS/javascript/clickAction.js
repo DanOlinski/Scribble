@@ -27,7 +27,7 @@ console.log(id)
         method: "put",
         data: { id: noteId, note: noteVal },
         // url: "http://localhost:8101/notes/delete",
-        url: "http:/54.163.27.219:8101/notes/delete",
+        url: "http://54.163.27.219:8101/notes/delete",
         context: document.body,
         success: function () {
 
