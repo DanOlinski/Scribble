@@ -21,7 +21,7 @@
             method: "put",
             data: {ip: userIP},
             // url: "http://localhost:8101/notes",
-            url: "http://3.147.237.154:8101/notes",
+            url: "http://44.204.238.202:8101/notes",
               context: document.body,
               success: function(data){
                 
@@ -56,7 +56,7 @@
             method: "put",
             data: {user_id:userIP, note: $('#text').val(), id:noteId},
             // url: "http://localhost:8101/notes/new",
-            url: "http://3.147.237.154:8101/notes/new",
+            url: "http://44.204.238.202:8101/notes/new",
             context: document.body,
             success: function(data){
       
