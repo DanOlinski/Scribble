@@ -2,7 +2,7 @@
 //in this case what was don is; this file was loaded in the header.php file in order to make all functions from this file accessible through any other file, then in the renders.js file a <script> tag was added placing this function in each rendered element.
 
 
-
+const endPoint = 'http://18.116.202.236:8101'
 
 const clickAction = function(id) {
 console.log(id)
@@ -27,7 +27,7 @@ console.log(id)
         method: "put",
         data: { id: noteId, note: noteVal },
         // url: "http://localhost:8101/notes/delete",
-        url: "http://54.163.27.219:8101/notes/delete",
+        url: `${endPoint}/notes/delete`,
         context: document.body,
         success: function () {
 
@@ -51,7 +51,7 @@ console.log(id)
         method: "put",
         data: { id: noteId, note: noteVal },
         // url: "http://localhost:8101/notes/update",
-        url: "http://54.163.27.219:8101/notes/update",
+        url: `${endPoint}/notes/update`,
         context: document.body,
         success: function () {
 

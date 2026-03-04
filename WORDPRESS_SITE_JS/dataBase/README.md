@@ -5,7 +5,7 @@
 ## Setup
 1. Install server dependencies using the `npm install` command from within dataBase folder.
 2. Run `npm i` from within the `WORDPRESS_SITE_JS/wp-content/themes/customtheme-child` folder 
-3. run the command `npm run db:reset` to create the tables and insert data into the database. This command is also used to reset the database back to it's original state.
+3. run the command `npm run db:reset` from within the dataBase folder to create the tables and insert data into the database. This command is also used to reset the database back to it's original state.
 4. Start the web server using the `npm start` command. The app will be served at <http://localhost:8101/>. To run this app using nodemon use the command: `npm run local`
 
 ## Routes

@@ -23,13 +23,16 @@
 
 ## Starting up the app
 
+#### Disk Space
+- make sure to have at least 15GB total disk space in your server otherwise you might run out of space
+
 #### In this repository there are 2 different versions of the same app. 
 - In the folder WORDPRESS_SITE_PHP, there is an app that runs mainly on php, it's not very interactive and has to reload at every change since php is a language that doesn't interact with the DOM. The reason why I kept this app is as a reference on interacting with database requests using php code and phpMyAdmin database interface.
 - In the folder WORDPRESS_SITE_JS, the app completes database requests and appends data to the DOM without having to refresh the page, using ajax and jquery. To run this app check the README file in the folder WORDPRESS_SITE_JS/dataBase
 
 #### If you are running the WORDPRESS_SITE_PHP version, before cloning the repo and run it, there is a file located at `WORDPRESS_SITE_PHP/javascript/clearNewNoteDiv.js` in that file there is a url, with a default value of `http://localhost:8000`, that url needs to be changed to the value equal to the homepage url where you wish to serve the website.
 
-#### If running the WORDPRESS_SITE_JS version, before cloning the repository go to specified files below and update the info for all `http://localhost:8101/` requests; 
+#### If running the WORDPRESS_SITE_JS version, before cloning the repository go to specified files below and update the endPoint variable to the correct end point example: `http://localhost:8101/` (these files are accessing the database wich is served at port 8101); 
     - WORDPRESS_SITE_JS/javascript/clickActions.js
     - WORDPRESS_SITE_JS/javascript/dbRequests.js
 
@@ -54,7 +57,7 @@
 - Go to rout `http://localhost:8000/wp-admin/`
 - Go to Appearance menu, select Themes, activate the theme called `custom theme child`
 - Setting up your home page
-    - Go to Pages, create a new page, name it Home.
+    - Go to Pages, create a new page, name it Home. Click publish
     - Go to Settings menu, click on Reading, under "Your homepage displays" chose the option "A static page (select below)". Next to "Homepage:" chose the Homepage option.
     - Go to Pages, then edit Home page, set "Template" to "home page"
 - Go to Settings menu, click on General change "Site Title" to Scribble
@@ -62,6 +65,6 @@
     - Go to Plugins, find the "Advanced Custom Fields" and click on `Activate`
     - Go to Plugins, find the "WP Markdown Editor (Formerly Dark Mode)" and click on `Activate`, if you want to work on dark mode
 
-## Run sass compiler
-#### In order to compile sass stylesheet during development you need to run `npm i` from within the `customtheme-child` folder to install all necessary dependencies, using the WSL Shell terminal(if you are using windows).
+## Run sass compiler (for development)
+#### In order to compile sass stylesheet during development you need to run `npm i` from within the `customtheme-child` to install all necessary dependencies, using the WSL Shell terminal(if you are using windows).
 #### Secondly run the command; `npm run compile` (this will open a process that will automatically compile any changes you make in the `./WORDPRESS_SITE/wp-content/themes/customtheme-child/styles/style.scss` file)

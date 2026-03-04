@@ -1,5 +1,6 @@
 //This script loads the notes from the database, it also creates new notes, by appending new created notes to the dom and at the same time sending a request to the database to add the new note there. This way the page doesn't need to be refreshed to show changes done by the user
 
+const endPoint = 'http://18.116.202.236:8101'
 
   $(document).ready(function(){
 
@@ -21,7 +22,7 @@
             method: "put",
             data: {ip: userIP},
             // url: "http://localhost:8101/notes",
-            url: "http://54.163.27.219:8101/notes",
+            url: `${endPoint}/notes`,
               context: document.body,
               success: function(data){
                 
@@ -56,7 +57,7 @@
             method: "put",
             data: {user_id:userIP, note: $('#text').val(), id:noteId},
             // url: "http://localhost:8101/notes/new",
-            url: "http://54.163.27.219:8101/notes/new",
+            url: `${endPoint}/notes/new`,
             context: document.body,
             success: function(data){
       
