@@ -1,6 +1,6 @@
 //This script loads the notes from the database, it also creates new notes, by appending new created notes to the dom and at the same time sending a request to the database to add the new note there. This way the page doesn't need to be refreshed to show changes done by the user
 
-const endPoint = 'http://13.59.29.139:8101/'
+const endPoint = 'http://13.59.29.139:8101'
 
   $(document).ready(function(){
 
