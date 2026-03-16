@@ -2,7 +2,7 @@
 //in this case what was don is; this file was loaded in the header.php file in order to make all functions from this file accessible through any other file, then in the renders.js file a <script> tag was added placing this function in each rendered element.
 
 
-const endPoint = 'http://13.59.29.139:8101'
+const endPoint = 'http://18.116.202.236:8101'
 
 const clickAction = function(id) {
 console.log(id)
