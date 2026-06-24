@@ -36,7 +36,7 @@
     - WORDPRESS_SITE_JS/javascript/clickActions.js
     - WORDPRESS_SITE_JS/javascript/dbRequests.js
 
-#### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker-compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
+#### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker compose up -d` (this will create the images (wp and mysql) and start up a server in a docker container). visit `http://localhost:8000/` to view the website.
 - If you are running wordpress in the system for the first time, you'll be prompted with a setup page. enter the requested info.
 
 #### To edit your wp page go to `http://localhost:8000/wp-admin/` username and password are both set as admin unless you chose something different during setup.
