@@ -38,6 +38,7 @@
 
 #### Go into your WSL shell terminal (if you are wising WSL), navigate into the folder where the wordpress site is located, run the command `docker compose up` (this will create the images (wp and mysql) and start up a server in a docker container)(the terminal won't get off the watch state, to know when your docker is serving to to the end point in your browser before closing the terminal). visit `http://localhost:8000/` to view the website.
 - If you are running wordpress in the system for the first time, you'll be prompted with a setup page. enter the requested info.
+- after the docker is up stop docket using `docker compose stop` then start it up using `docker compose up -d` that way of starting the container will keep it running indefinetely
 
 #### To edit your wp page go to `http://localhost:8000/wp-admin/` username and password are both set as admin unless you chose something different during setup.
 
